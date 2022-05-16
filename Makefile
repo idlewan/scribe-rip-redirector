@@ -2,7 +2,7 @@ all: build build/manifest.json build/assets \
 	build/background.js
 
 zip:
-	(cd build && apack ../tabpocalypse.zip *)
+	(cd build && apack ../scribe-rip-redirector.zip *)
 
 build:
 	mkdir -p $@
