@@ -1,0 +1,22 @@
+manifest_version: 2
+name: Medium-to-Scribe.rip redirector
+author: Erwan Ameil
+homepage_url: https://github.com/idlewan/scribe-rip-redirect
+version: '1.0'
+
+description: >
+  Redirect medium.com URLs to scribe.rip for a better reading experience
+  & other reasons (see https://scribe.rip/faq)
+
+icons:
+  128: assets/icon128.png
+
+permissions:
+- webRequest
+- webRequestBlocking
+- "https://medium.com/"
+- "https://*.medium.com/"
+
+background:
+  scripts:
+    - background.js

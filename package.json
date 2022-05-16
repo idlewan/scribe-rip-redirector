@@ -1,0 +1,6 @@
+{
+    "devDependencies": {
+        "concurrently": "^6.4.0",
+        "web-ext-types": "github:ntninja/web-ext-types"
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "es2020",
+    "noEmit": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true, /* for esbuild compatibility */
+    "noImplicitAny": true,
+    "typeRoots": ["node_modules/@types", "node_modules/web-ext-types"],
+    "skipLibCheck": true  /* Skip type checking all .d.ts files. */
+  },
+  "include": ["background.ts"],
+}
