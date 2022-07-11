@@ -1,3 +1,5 @@
+const medium_post_url_regex = RegExp("(/@[^/]+)?/[^@][^/]*-[^/]+")
+
 function redirect(requestDetails: {
     requestId: string;
     url: string;
@@ -17,7 +19,11 @@ function redirect(requestDetails: {
   let new_url = new URL(requestDetails.url)
   const path = new_url.pathname
 
-  if (path.startsWith("/u/") || path.startsWith("/@") || path == "/") {
+  if (path.startsWith("/m/global-identity")) {
+    const url = new_url.searchParams.get('redirectUrl')
+    if (!url) return {}
+    new_url = new URL(url);
+  } else if (!medium_post_url_regex.test(path)) {
     return {}
   }
 
