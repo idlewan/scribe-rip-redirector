@@ -2,7 +2,7 @@ manifest_version: 2
 name: Medium-to-Scribe.rip redirector
 author: Erwan Ameil
 homepage_url: https://github.com/idlewan/scribe-rip-redirector
-version: '1.0'
+version: '1.1'
 
 description: >
   Redirect medium.com URLs to scribe.rip for a better reading experience
